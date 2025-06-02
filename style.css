@@ -1,0 +1,145 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* Light teal background for the page */
+}
+
+/* Style the CTA banner */
+.cta-banner {
+  background-color: rgba(201, 241, 249, 0.85); /* Lighter blue-teal with some transparency */
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten; /* Blend the color and image for a subtle overlay */
+  color: #1e355d; /* Dark blue text */
+  text-align: center;
+  padding: 80px 20px; /* Tall banner with space around content */
+}
+
+/* Main heading style */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Description text style */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA button style */
+.cta-button {
+  display: inline-block;
+  background-color: #2ed8c3; /* Bright teal for the button */
+  color: #1e355d;
+  padding: 16px 36px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  /* Make the button stand out */
+  box-shadow: 0 2px 8px rgba(30, 136, 168, 0.15);
+  transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #26bfa6;
+}
+
+/* Simple site header style */
+.site-header {
+  background-color: #156d8b; /* Slightly darker blue for contrast */
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0;
+}
+
+/* Site name style */
+.site-header h2 {
+  margin: 0;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Info section with two columns */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  /* Use table display for simple two-column layout */
+  display: table;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30, 136, 168, 5);
+  overflow: hidden;
+}
+
+/* Each column */
+.info-image,
+.info-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Image styling */
+.info-image {
+  max-width: 320px;
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Center image vertically and horizontally in its cell */
+}
+
+/* Text column styling */
+.info-text {
+  text-align: left;
+  color: #1e355d;
+  padding-right:20px;
+}
+
+.info-text h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #156d8b;
+}
+
+.info-text p {
+  font-size: 1.1em;
+  margin-top: 12px;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-section {
+    display: block;
+  }
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .info-text {
+    text-align: center;
+  }
+}
